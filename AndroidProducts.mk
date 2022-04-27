@@ -16,4 +16,5 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cherish_RM6785.mk
-#    $(LOCAL_DIR)/aosp_RM6785.mk
+    $(LOCAL_DIR)/aosp_RM6785.mk
+    $(LOCAL_DIR)/aicp_RM6785.mk
