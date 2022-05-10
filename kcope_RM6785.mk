@@ -21,16 +21,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RM6785/device.mk)
 
-# TARGET_BUILD_GRAPHENEOS_CAMERA := true/false
+# TARGET_BUILD_GRAPHENEOS_CAMERA := true
 
 # Inherit some common CherishOS stuff.
 # USE_GAPPS=true # TARGET_USES_BLUR := true # USE_LAWNCHAIR := true
 # TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+$(call inherit-product, vendor/kscope/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aicp_RM6785
+PRODUCT_NAME := kscope_RM6785
 PRODUCT_DEVICE := RM6785
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RM6785
@@ -42,7 +42,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-realme
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
-# AICP Device Maintainers
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="vadd (@vadd99)"
+DEVICE_MAINTAINERS="vadd (@vadd99)"
 
